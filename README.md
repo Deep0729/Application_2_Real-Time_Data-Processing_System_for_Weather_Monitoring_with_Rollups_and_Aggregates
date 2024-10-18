@@ -1,5 +1,7 @@
 # Real-Time_Data-Processing_System_for_Weather_Monitoring_with_Rollups_and_Aggregates
 
+## Hosted Link: https://deep0729.github.io/Application_2_Real-Time_Data-Processing_System_for_Weather_Monitoring_with_Rollups_and_Aggregates/
+
  ![Screenshot 2024-10-18 110319](https://github.com/user-attachments/assets/191a6e72-9b30-4063-80b9-9d319615330d)
 
  ![Screenshot 2024-10-18 112254](https://github.com/user-attachments/assets/243c98a3-6417-4b6d-b311-ae1847165605)
