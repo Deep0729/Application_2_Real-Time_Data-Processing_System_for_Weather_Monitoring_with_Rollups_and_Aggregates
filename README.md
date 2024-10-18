@@ -67,8 +67,7 @@ This project is designed to retrieve weather data from the OpenWeatherMap API at
 
 1. **Clone the Repository**
    ```bash
-   git clone "https://github.com/Santosh-2003-sahoo/App2-Weather-app.git"
-   cd App2-Weather-app
+   git clone "https://github.com/Deep0729/Application_2_Real-Time_Data-Processing_System_for_Weather_Monitoring_with_Rollups_and_Aggregates.git"
    ```
 
 2. **Install Backend Dependencies (Optional)**
