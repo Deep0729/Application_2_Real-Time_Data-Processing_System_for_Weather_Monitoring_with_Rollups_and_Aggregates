@@ -16,13 +16,40 @@ This project is designed to retrieve weather data from the OpenWeatherMap API at
 - **Temperature Conversion:** Converts temperature values from Kelvin to Celsius or Fahrenheit based on user preference.
 - **Daily Weather Summary:** Simulates weather updates over several days and calculates average, maximum, minimum temperatures, and dominant weather conditions.
 - **Additional Parameters:** Supports retrieval and analysis of additional weather parameters such as humidity and wind speed.
-- **5 days Weather Forecast** 
+- **5 days Weather Forecast**
+- **main:** Main weather condition (e.g., Rain, Snow, Clear)
+- **temp:** Current temperature in Centigrade
+- **feels_like:** Perceived temperature in Centigrade
+- **dt:** Time of the data update (Unix timestamp)
 
 ## Design Choices
 
 - **Modularity:** The system is divided into distinct modules for initialization, data retrieval, temperature conversion, and summary generation, making it easy to maintain and extend.
 - **Configurability:** API call intervals and temperature units are configurable to allow flexibility.
 - **Extensibility:** Designed to easily incorporate additional weather parameters from the OpenWeatherMap API.
+
+## Rollups and Aggregates:
+
+**1. Daily Weather Summary:**
+ -  Roll up the weather data for each day.
+**Calculate daily aggregates for:**
+    - Average temperature
+    - Maximum temperature
+    - Minimum temperature
+    - Dominant weather condition (give reason on this)
+**Store the daily summaries in a database or persistent storage for further analysis.**
+
+**2. Alerting Thresholds:**
+  - Define user-configurable thresholds for temperature or specific weather
+    conditions (e.g., alert if temperature exceeds 35 degrees Celsius for two
+    consecutive updates).
+  - Continuously track the latest weather data and compare it with the thresholds.
+  - If a threshold is breached, trigger an alert for the current weather conditions.
+    Alerts could be displayed on the console or sent through an email notification
+    system (implementation details left open-ended).
+
+**3. Implement visualizations:**
+  - To display daily weather summaries, historical trends, and triggered alerts.
 
 ## Requirements
 - Screen 1070*680 minimum
