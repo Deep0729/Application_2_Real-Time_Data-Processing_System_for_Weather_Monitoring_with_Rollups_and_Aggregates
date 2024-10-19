@@ -88,7 +88,7 @@ This project is designed to retrieve weather data from the OpenWeatherMap API at
    ```
    
    ```
-   http-server -p 8080**
+   http-server -p 8080
    ```
    
    ** After run the command in the terminal it shows available links in the terminal. For example:
